@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@1,300&display=swap');
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    background-color: hsl(27, 66%, 92%);
+}
+.container{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container .top{
+    background-color: hsl(10, 79%, 65%);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 20px;
+    color: #fff;
+}
+.top span{
+    font-size: 12px;
+    opacity: 0.8;
+}
+.info-balance{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.info-balance h2{
+    font-weight: 500;
+}
+img{
+    width: 10%;
+}
+.bottom{
+    background-color: #fff;
+    color:black;
+    padding: 25px;
+    border-radius: 20px;
+}
+.bottom h3{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.weekdays-chart{
+    display: flex;
+    gap: 3px;
+    justify-content: space-between;
+}
+.weekdays-chart .row{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: end;
+    align-items: center;
+    gap: 3px;
+    width: 40px;
+}
+.monday{
+    height: 40%;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    width: 35px;
+}
+.tuesday{
+    height: 50%;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    width: 35px;
+}
+.wednesday{
+    height: 75%;
+    background-color: hsl(186, 34%, 60%);
+    border-radius: 5px;
+    width: 35px;
+}
+.thursday{
+    height: 45%;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    width: 35px;
+}
+.friday{
+    height: 35%;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    width: 35px;
+}
+.saturday{
+    height: 70%;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    width: 35px;
+}
+.sunday{
+    height: 55%;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    width: 35px;
+}
+
+.row span{
+    font-size: 13px;
+    color: hsl(28, 10%, 53%);
+    text-align: center;
+}
+
+hr{
+    margin-top: 20px;
+    background-color:hsl(28, 10%, 53%);
+    margin-bottom: 20px;
+}
+
+.weekdays-price{
+    display: flex;
+    justify-content: space-between;
+}
+.weekdays-price span{
+    color: hsl(28, 10%, 53%);
+    font-size: 13px;
+}
+h1{
+    color:hsl(25, 47%, 15%);
+    letter-spacing: 1px;
+}
+.percentage{
+    margin-top: 20px;
+}
+.weekdays-price p{
+    font-weight: 600;
+}
+
+.amount{
+    background-color: hsl(25, 47%, 15%);
+    padding: 3px 5px;
+    text-align: center;
+    border-radius: 3px;
+    color: white !important;
+    font-weight: 600;
+    display: none;
+}
+.row:hover .amount{
+    display: block;
+}
+.row:hover div{
+    opacity: 0.8;
+}
+@media screen and (min-width:400px){
+    body{
+        align-items: flex-start;
+    }
+    .container{
+        margin-top: 100px;
+        padding: 10px;
+    }
+    
+}
